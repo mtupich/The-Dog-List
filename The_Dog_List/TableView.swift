@@ -12,6 +12,7 @@ class TableView: UIView {
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
+        table.backgroundColor = .black
         table.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.identifier)
         return table
     }()

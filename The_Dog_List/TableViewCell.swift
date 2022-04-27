@@ -44,7 +44,7 @@ class TableViewCell: UITableViewCell {
     }
     
     func setUpCell(data: Response) {
-        dogImageview.image = UIImage(named: data.image)
+//        dogImageview.image = UIImage(named: data.image)
         dogNameLabel.text = data.name
     }
     

@@ -13,11 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        if #available(iOS 15, *) {
+            UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBarAppearance()
+        }
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc: ViewController = ViewController()
-        let navVc = UINavigationController(rootViewController: vc)
-        window.rootViewController = navVc
+        let vc: MyTabBarController = MyTabBarController()
+        window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
     }

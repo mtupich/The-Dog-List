@@ -17,4 +17,9 @@ extension UIColor {
     static var orange02: UIColor {
         return UIColor(red: 254.0/255.0, green: 101.0/255.0, blue: 32.0/255.0, alpha: 1)
     }
+    
+    static var customBrown: UIColor {
+        return UIColor(red: 74.0/255.0, green: 58.0/255.0, blue: 54.0/255.0, alpha: 1)
+
+    }
 }
